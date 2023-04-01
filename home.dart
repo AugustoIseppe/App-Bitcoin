@@ -9,7 +9,7 @@ class TelaInicial extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<TelaInicial> {
-  String _preco = '';
+  String _preco = '0';
   Future<void> _recuperarPreco() async {
     String url = 'https://blockchain.info/ticker';
     http.Response response = await http.get(Uri.parse(url));
